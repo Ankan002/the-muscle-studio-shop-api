@@ -10,6 +10,7 @@
     "build": "swc src -d build",
     "test": "jest --passWithNoTests",
     "prepare": "husky install",
+    "lint": "eslint",
     "pre-commit": "lint-staged && yarn test",
     "post-merge": "yarn install",
     "commit-msg": "npx --no-install commitlint --edit"

@@ -1,3 +1,4 @@
+// This is jest config
 export default {
 	preset: "ts-jest",
 	testEnvironment: "node",

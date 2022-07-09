@@ -9,8 +9,8 @@
     "dev": "nodemon",
     "build": "swc src -d build",
     "test": "jest --passWithNoTests",
-    "prepare": "husky install && chmod ug+x .husky/*",
-    "pre-commit": "lint-staged && yarn test",
+    "prepare": "husky install",
+    "pre-commit": "yarn test",
     "post-merge": "yarn install",
     "commit-msg": "npx --no-install commitlint --edit"
   },
@@ -50,12 +50,5 @@
     "ts-node": "^10.8.1",
     "tsconfig-paths": "^3.10.1",
     "typescript": "^4.7.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && yarn test",
-      "post-merge": "yarn install",
-      "commit-msg": "npx --no-install commitlint --edit"
-    }
   }
 }

@@ -9,7 +9,7 @@
     "dev": "nodemon",
     "build": "swc src -d build",
     "test": "jest --passWithNoTests",
-    "prepare": "husky install",
+    "prepare": "husky install && chmod ug+x .husky/*",
     "pre-commit": "lint-staged && yarn test",
     "post-merge": "yarn install",
     "commit-msg": "npx --no-install commitlint --edit"

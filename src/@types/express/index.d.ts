@@ -5,7 +5,7 @@ declare global {
 		interface Request {
 			user: {
 				id: string;
-				type: "admin" | "trainer" | "member" | "user"
+				type: "admin" | "trainer" | "member" | "user";
 			};
 		}
 	}

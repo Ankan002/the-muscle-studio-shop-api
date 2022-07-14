@@ -31,6 +31,15 @@
       "paths": {
         "graphql/*": [
           "./graphql/*"
+        ],
+        "routes/*": [
+          "./routes/*"
+        ],
+        "controllers/*": [
+          "./controllers/*"
+        ],
+        "middlewares/*": [
+          "./middlewares/*"
         ]
       }
   },

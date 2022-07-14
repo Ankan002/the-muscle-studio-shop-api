@@ -1,4 +1,4 @@
-import { Resolver } from "typings";
+import { Resolver } from "typings/graphql";
 
 interface ArgsProps {
 	payload: {

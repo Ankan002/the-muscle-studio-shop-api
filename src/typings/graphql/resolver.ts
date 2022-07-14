@@ -1,23 +1,12 @@
 import { ExpressContext } from "apollo-server-express";
 import { TypeInfo } from "graphql";
+import { APIResponse } from "typings/general";
 
 interface GraphQLContext extends ExpressContext {
 	authToken: string;
 }
 
 // TODO: define status code types and add it to API Response
-
-type APIResponse<T> =
-	| {
-			success: true;
-			message?: string;
-			data: T;
-	  }
-	| {
-			success: false;
-			error: string;
-			code: number;
-	  };
 
 /**
  * This is the function type for the GraphQL resolver.

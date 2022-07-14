@@ -31,6 +31,9 @@
       ],
       "middlewares/*": [
         "./middlewares/*"
+      ],
+      "constants/*": [
+        "./constants/*"
       ]
     }
   },

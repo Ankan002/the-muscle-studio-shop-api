@@ -7,12 +7,18 @@ import { welcomeResolver } from "graphql/resolvers";
 import cookieParser from "cookie-parser";
 
 import { welcomeRouter } from "routes/welcome";
+import { origins } from "constants/cors-origins";
 
 const startServer = async () => {
 	const app = express();
 	const PORT = process.env["PORT"];
 
-	app.use(cors());
+	app.use(
+		cors({
+			credentials: true,
+			origin: origins,
+		})
+	);
 	app.use(express.json());
 	app.use(cookieParser());
 	app.use(

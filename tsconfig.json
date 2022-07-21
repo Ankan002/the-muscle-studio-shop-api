@@ -19,14 +19,13 @@
       "noImplicitAny": true,
       "pretty": true,
       "typeRoots": ["src/@types", "./node_modules/@types"],
-      "noEmit": true,
+      "noEmit": false,
       "esModuleInterop": true,
       "module": "commonjs",
       "moduleResolution": "node",
       "resolveJsonModule": true,
       "isolatedModules": true,
-      "jsx": "preserve",
-      "incremental": true,
+      "incremental": false,
       "baseUrl": "src",
       "paths": {
         "graphql/*": [
@@ -46,5 +45,5 @@
         ]
       }
   },
-  "include": ["src", "./commitlint.config.ts", "./jest.config.ts"]
+  "include": ["src"]
 }

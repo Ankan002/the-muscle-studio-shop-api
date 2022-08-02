@@ -1,4 +1,5 @@
 import { Resolver } from "typings/graphql";
+import { logger } from "utils/logger";
 
 interface ArgsProps {
 	payload: {
@@ -10,7 +11,7 @@ interface ArgsProps {
 export const welcome: Resolver<ArgsProps> = async (parent, args, context) => {
 	const { payload } = args;
 
-	console.log(context);
+	logger.debug(context);
 
 	return {
 		success: true,

@@ -48,6 +48,9 @@
         ],
         "config/*": [
           "./config/*"
+        ],
+        "models/*": [
+          "./models/*"
         ]
       }
   },

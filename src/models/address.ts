@@ -3,7 +3,7 @@ import { AddressSchema } from "typings/schema";
 
 const addressSchema = new Schema<AddressSchema>(
 	{
-		userId: {
+		user: {
 			type: Schema.Types.ObjectId,
 			required: true,
 			ref: "User",

@@ -3,12 +3,12 @@ import { CartItemSchema } from "typings/schema";
 
 const cartItemSchema = new Schema<CartItemSchema>(
 	{
-		userId: {
+		user: {
 			type: Schema.Types.ObjectId,
 			required: true,
 			ref: "User",
 		},
-		productId: {
+		product: {
 			type: Schema.Types.ObjectId,
 			required: true,
 			ref: "Product",

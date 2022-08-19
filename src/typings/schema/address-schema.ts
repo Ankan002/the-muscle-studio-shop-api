@@ -1,7 +1,7 @@
 import { ObjectId } from "mongoose";
 
 export interface AddressSchema {
-	userId: ObjectId;
+	user: ObjectId;
 	name: string;
 	house: string;
 	street: string;

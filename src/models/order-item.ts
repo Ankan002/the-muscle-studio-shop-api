@@ -3,12 +3,12 @@ import { OrderItemSchema } from "typings/schema";
 
 const orderItemSchema = new Schema<OrderItemSchema>(
 	{
-		userId: {
+		user: {
 			type: Schema.Types.ObjectId,
 			required: true,
 			ref: "User",
 		},
-		productId: {
+		product: {
 			type: Schema.Types.ObjectId,
 			required: true,
 			ref: "Product",

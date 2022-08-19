@@ -1,8 +1,8 @@
 import { ObjectId } from "mongoose";
 
 export interface OrderItemSchema {
-	userId: ObjectId;
-	productId: ObjectId;
+	user: ObjectId;
+	product: ObjectId;
 	quantity: number;
 	size?: string;
 }
